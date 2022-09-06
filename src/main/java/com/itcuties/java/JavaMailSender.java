@@ -18,11 +18,11 @@ import javax.mail.internet.MimeMessage;
 public class JavaMailSender {
 
 	// Run the mail example
-	public static void main(String[] args) {
-		// Send email
-		sendEmail();
-		
-	}
+//	public static void main(String[] args) {
+//		// Send email
+//		sendEmail();
+//
+//	}
 	
 	/**
 	 * Send the email via SMTP using TLS and SSL
