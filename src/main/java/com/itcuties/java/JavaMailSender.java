@@ -32,7 +32,7 @@ public class JavaMailSender {
 		// Create all the needed properties
 		Properties connectionProperties = new Properties();
 		// SMTP host
-		connectionProperties.put("mail.smtp.host", "smtp.itcuties.com");
+		connectionProperties.put("mail.smtp.host", "smtp.gmail.com");
 		// Is authentication enabled
 		connectionProperties.put("mail.smtp.auth", "true");
 		// Is TLS enabled
@@ -50,7 +50,7 @@ public class JavaMailSender {
 		Session session = Session.getDefaultInstance(connectionProperties,
 				new javax.mail.Authenticator() {	// Define the authenticator
 					protected PasswordAuthentication getPasswordAuthentication() {
-						return new PasswordAuthentication("coding@itcuties.com","P@ssw0rd");
+						return new PasswordAuthentication("learntodevelop2020@gmail.com","qqyxeixksthswomw");
 					}
 				});
 		
@@ -61,13 +61,13 @@ public class JavaMailSender {
 			// Create the message 
 			Message message = new MimeMessage(session);
 			// Set sender
-			message.setFrom(new InternetAddress("coding@itcuties.com"));
+			message.setFrom(new InternetAddress("isakovazizbek19@gmail.com"));
 			// Set the recipients
-			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("team@itcuties.com"));
+			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("learntodevelop2020@gmail.com"));
 			// Set message subject
-			message.setSubject("Hello from Team ITCuties");
+			message.setSubject("Abdulaziz bu men Intellij");
 			// Set message text
-			message.setText("Java is easy when you watch our tutorials ;)");
+			message.setText("Bu messageni ko'rgan bo'lsang demak mail successful bo'libti!");
 			
 			System.out.print("Sending message...");
 			// Send the message
